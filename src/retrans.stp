@@ -100,7 +100,7 @@ function do_ToEventDistr(sk:long)
  * Retrans pkt distribution.
  */
 probe retran.PktDistr = 
-	kernel.statement("tcp_retransmit_skb@net/ipv4/tcp_output.c:2146")
+	kernel.statement("tcp_retransmit_skb@net/ipv4/tcp_output.c:2150")
 {
 	if (mem_is_stop()) next
 	if (!$sk->sk_protinfo)
@@ -230,7 +230,7 @@ probe retran.FrUndo =
  * FRTO undo event.
  */
 probe retran.FrtoUndo =
-	kernel.statement("tcp_process_frto@net/ipv4/tcp_input.c:3649")
+	kernel.statement("tcp_process_frto@net/ipv4/tcp_input.c:3650")
 {
 	if (mem_is_stop()) next
 	if (!$sk->sk_protinfo)

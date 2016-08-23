@@ -3,7 +3,8 @@
 # Make a rpm package of tcpdive based on specific kernel version.
 
 # Kernel Version
-KERNEL_VER="2.6.32-431.17.1.el6.x86_64"
+#KERNEL_VER="2.6.32-431.17.1.el6.x86_64"
+KERNEL_VER="2.6.32-504.8.1.el6.x86_64"
 KERNEL_NAME=`echo $KERNEL_VER|sed 's/\.x86_64//'`
 
 if [ ! -d "/lib/modules/$KERNEL_VER" ]; then

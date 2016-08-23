@@ -1,4 +1,4 @@
-%define kversion 2.6.32-431.17.1.el6
+%define kversion 2.6.32-504.8.1.el6
 
 Name:		tcpdive-%{kversion}
 Version:	1.0

@@ -9,7 +9,7 @@
  * Send data out.
  */
 probe trans.Send = 
-	kernel.statement("tcp_write_xmit@net/ipv4/tcp_output.c:1785")
+	kernel.statement("tcp_write_xmit@net/ipv4/tcp_output.c:1787")
 {
 	if (mem_is_stop()) next
 	if (!$sk->sk_protinfo)

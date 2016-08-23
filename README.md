@@ -1,4 +1,4 @@
-#[tcpdive](https://github.com/zhangskd/tcpdive) - A TCP performance profiling tool
+#[tcpdive](https://github.com/fastos/tcpdive) - A TCP performance profiling tool
 
 Table of Contents
 -----------------------------------------
@@ -121,7 +121,7 @@ monitor every http request and response. HTTP Keep-Alive is suppported.
 
 For a pair of http request and response, performance indicators listed below are provided.
 
-![HTTP performance indicators](image/http2.jpg "HTTP peformance indicators")
+![HTTP performance indicators](image/http2.jpg "HTTP performance indicators")
 
 Tcpdive can profile HTTP processing in some degree, as illustrated above.    
 Note that all the work is done in TCP Layer, which means it is independent of HTTP applications.
@@ -200,7 +200,7 @@ Note that there are two kinds of log formats supported, check [LOG](doc/log.md) 
       -l <msec>     # lifetime of connection should greater than <msec>
       -i <msec>     # trans time of response should greater than <msec>
       -s <num>      # take one sample from <num> connections
-      -p <ports>    # server ports cared, use comma to seperate
+      -p <ports>    # server ports cared, use comma to separate
         
       -f <laddr>:<lport>-<raddr>:<rport> [-f <...>] # should be last
          eg. -f *.*.*.*:80-10.210.136.*:*

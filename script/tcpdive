@@ -4,7 +4,7 @@
 TOOL_VER=1.0
 TOOL_RELEASE=stable
 
-KERNEL=2.6.32-431.17.1.el6.x86_64
+KERNEL=2.6.32-504.8.1.el6.x86_64
 KERNEL_NAME=`echo $KERNEL|sed 's/\.x86_64//'`
 
 MODULE="/lib/modules/$KERNEL/kernel/net/ipv4/tcpdive.ko"
